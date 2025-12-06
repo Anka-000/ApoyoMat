@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Felicidades!</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const audio = new Audio("recursos/celebracion.mp3");
+        audio.play().catch(() => {
+            console.log("Autoplay bloqueado, esperando interacción…");
+        });
+    });
+    </script>
+</head>
+
+<body class="felicidades">
+    <div class="contenedor-felicidades">
+        <h1>🎉 ¡Felicidades! 🎉</h1>
+        <p>Has respondido correctamente todas las preguntas.</p>
+
+        <!-- Animación de cara sonriente -->
+        <div class="carita">
+            <div class="ojo izquierdo"></div>
+            <div class="ojo derecho"></div>
+            <div class="boca"></div>
+        </div>
+
+        <a href="grados.html" class="boton">Volver a los grados</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<form action="registro.php" method="POST">
+
+    <label>Nombre del alumno:</label>
+    <input type="text" name="nombre_alumno" required>
+
+    <label>Nombre del padre o tutor:</label>
+    <input type="text" name="nombre_tutor" required>
+
+    <label>Correo:</label>
+    <input type="email" name="correo" required>
+
+    <label>Contraseña:</label>
+    <input type="password" name="contrasena" required>
+
+    <label>Teléfono (opcional):</label>
+    <input type="text" name="telefono">
+
+    <label>Grado actual:</label>
+    <select name="grado" required>
+        <option value="1">1°</option>
+        <option value="2">2°</option>
+        <option value="3">3°</option>
+        <option value="4">4°</option>
+        <option value="5">5°</option>
+        <option value="6">6°</option>
+    </select>
+
+    <button type="submit">Registrar</button>
+</form>

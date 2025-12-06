@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* 🔹 Fondo con imagen */
+    background-image: url("recursos/fondoMat.jpg"); /* nombre y carpeta de tu imagen */
+    background-size: cover;     /* hace que cubra toda la pantalla */
+    background-position: center; /* centra la imagen */
+    background-attachment: fixed; /* el fondo no se mueve al hacer scroll */
+    background-repeat: no-repeat; /* evita que se repita */
+
+    text-align: center;
+}
+
+header {
+    background-color: #00bbffa5;
+    color: white;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Pagina principal */
+.presentacion {
+    margin-top: 50px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Pagina de grados */
+.grados {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.tarjeta {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos de ejercicioa */
+.ejercicio {
+    position: relative; /* necesario para posicionar el botón dentro */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+.ejercicio img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.ejercicio ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ejercicio li {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 8px 15px;
+    background-color: #00aaff;
+    color: white;
+    border-radius: 5px;
+}
+.opciones {
+    margin-top: 10px;
+}
+
+.opcion {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.opcion:hover {
+    background-color: #007acc;
+}
+
+.opcion:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.reintentar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+
+.reintentar:hover {
+    transform: rotate(180deg);
+}
+
+/* Estilos de la pantalla de felicitación */
+.felicidades {
+    background-color: #00aaff;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-felicidades {
+    background: white;
+    color: #333;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    width: 80%;
+    max-width: 500px;
+    animation: aparecer 1s ease-out;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.carita {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #ffeb3b;
+    border-radius: 50%;
+    margin: 30px auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    animation: saltar 1.2s infinite;
+}
+
+.ojo {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    top: 40px;
+}
+
+.ojo.izquierdo { left: 35px; }
+.ojo.derecho { right: 35px; }
+
+.boca {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    border-bottom: 5px solid black;
+    border-radius: 0 0 60px 60px;
+    bottom: 40px;
+    left: 45px;
+}
+
+@keyframes saltar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Tarjeta de usuario */
+.user-card {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border: 1px solid #ddd;
+    z-index: 9999;
+}
+
+.user-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0099ff;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
