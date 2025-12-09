@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ApoyoMat</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+    <style>
+        /* Estilos específicos para esta página */
+        main {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tarjeta-contacto {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin: 15px;
+            width: 90%;
+            max-width: 350px;
+            text-align: left;
+        }
+        .tarjeta-contacto h3 {
+            color: #007bff;
+            margin-top: 0;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .tarjeta-contacto p {
+            margin: 8px 0;
+            color: #333;
+        }
+        .tarjeta-contacto .equipo {
+            font-weight: bold;
+            color: #0056b3;
+        }
+        .contenedor-equipo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="grados.html">Grados</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="register.php">Registro</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Equipo de Desarrollo ApoyoMat</h2>
+        <div class="contenedor-equipo">
+            
+            <div class="tarjeta-contacto">
+                <h3>Cruz Landa Ángel Kaleb</h3>
+                <p><span class="equipo">Email:</span> angel.cruz@matemail.com</p>
+                <p><span class="equipo">Teléfono:</span> +52 228 123 4567</p>
+            </div>
+
+            <div class="tarjeta-contacto">
+                <h3>Durán Hernández Luis Angel</h3>
+                <p><span class="equipo">Email:</span> luis.duran@matemail.com</p>
+                <p><span class="equipo">Teléfono:</span> +52 228 987 6543</p>
+            </div>
+            
+            <div class="tarjeta-contacto">
+                <h3>Hernández Arroyo César Iván</h3>
+                <p><span class="equipo">Email:</span> cesar.arroyo@matemail.com</p>
+                <p><span class="equipo">Teléfono:</span> +52 228 555 1234</p>
+            </div>
+        </div>
+        
+        <h2>Información General</h2>
+        <p>Para soporte o dudas sobre el proyecto, contacte a través del siguiente correo:</p>
+        <div class="tarjeta-contacto">
+            <p><span class="equipo">Soporte:</span> apoyo.mat@matemail.com</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2025 ApoyoMat | Equipo 02 ISC</p>
+    </footer>
+</body>
+</html>
