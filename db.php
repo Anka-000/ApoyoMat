@@ -4,7 +4,7 @@
 $db_host = getenv('DB_HOST') ?: 'localhost';
 $db_user = getenv('DB_USER') ?: 'root';
 $db_pass = getenv('DB_PASSWORD') ?: ''; // Deja esto vacío por defecto para local si no tienes pass
-$db_name = getenv('DB_NAME') ?: 'apoyomat';
+$db_name = getenv('DB_NAME') ?: 'bu2hyubjxlhnrljbzi3n';
 
 // En Render (y Docker) a veces el puerto es necesario si no es el 3306 estandar, 
 // pero usualmente con el host basta.
@@ -17,3 +17,4 @@ if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
 }
 ?>
+
